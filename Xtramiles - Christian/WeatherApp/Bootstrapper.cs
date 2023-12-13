@@ -1,10 +1,12 @@
 using System;
 using System.Collections.Generic;
 using System.Web.Mvc;
+using System.Web.Services.Description;
 using Unity;
 using Unity.AspNet.Mvc;
 using WeatherApp.Service.Country;
 using WeatherApp.Service.Weather;
+using WeatherApp.Services;
 
 namespace WeatherApp
 {
@@ -26,9 +28,11 @@ namespace WeatherApp
             var container = new UnityContainer();
 
             container.RegisterType<ICountryService, CountryService>();
-            container.RegisterType<IWeatherService, WeatherService>();
+            container.RegisterType<IWeatherService, WeatherService>(); 
+            container.RegisterType<IHttpRequestHandler, HttpRequestHandler>();
+			container.RegisterType<IHttpContentWrapper, HttpContentWrapper>();
 
-            return container;
+			return container;
         }
 
         private static void RegisterTypes(Dictionary<Type, Type> containerTypes, UnityContainer container)

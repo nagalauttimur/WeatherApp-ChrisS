@@ -12,10 +12,10 @@ namespace WeatherApp.Controllers
         private readonly ICountryService _countryService;
         private readonly IWeatherService _weatherService;
 
-        public HomeController()
+        public HomeController(ICountryService countryService, IWeatherService weatherService)
         {
-            this._countryService = DependencyResolver.Current.GetService<ICountryService>();
-            this._weatherService = DependencyResolver.Current.GetService<IWeatherService>();
+            this._countryService = countryService;
+            this._weatherService = weatherService;
         }
 
         public async Task<ActionResult> Index()
