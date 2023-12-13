@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Net.Http;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
 using WeatherApp.Models;
@@ -40,8 +38,8 @@ namespace WeatherApp.Service.Weather
 						Wind = $"{weatherResponse.Wind.Speed} m/s",
 						Visibility = $"{weatherResponse.Visibility} meters",
 						SkyConditions = weatherResponse.Weather[0].Description,
-						TemperatureCelsius = ConvertKelvinToCelsius(weatherResponse.Main.Temp),
-						TemperatureFahrenheit = ConvertCelsiusToFahrenheit(ConvertKelvinToCelsius(weatherResponse.Main.Temp)),
+						TemperatureCelsius = weatherResponse.Main.Celcius,
+						TemperatureFahrenheit = weatherResponse.Main.Fahrenheit,
 						DewPoint = $"{weatherResponse.Main.Temp} K",
 						RelativeHumidity = $"{weatherResponse.Main.Humidity}%",
 						Pressure = $"{weatherResponse.Main.Pressure} hPa"
@@ -59,9 +57,5 @@ namespace WeatherApp.Service.Weather
 				return null;
 			}
 		}
-
-		private decimal ConvertKelvinToCelsius(decimal kelvin) => decimal.Round(kelvin - 273.15M, 2);
-
-		private decimal ConvertCelsiusToFahrenheit(decimal celsius) => decimal.Round(celsius * 9 / 5 + 32, 2);
 	}
 }
