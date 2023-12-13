@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE coverage SYSTEM "http://cobertura.sourceforge.net/xml/coverage-04.dtd">
-<coverage line-rate="0.13638373121131742" branch-rate="0.06584158415841584" lines-covered="617" lines-valid="4524" branches-covered="133" branches-valid="2020" complexity="1975" version="0" timestamp="1702501760">
+<coverage line-rate="0.13626325088339222" branch-rate="0.06577645895153314" lines-covered="617" lines-valid="4528" branches-covered="133" branches-valid="2022" complexity="1976" version="0" timestamp="1702509916">
   <sources />
   <packages>
     <package name="Moq" line-rate="0.108178175818996" branch-rate="0.05923694779116466" complexity="1912">
@@ -3958,67 +3958,71 @@
         </class>
       </classes>
     </package>
-    <package name="WeatherApp" line-rate="0.39705882352941174" branch-rate="0.5555555555555556" complexity="46">
+    <package name="WeatherApp" line-rate="0.3894230769230769" branch-rate="0.5" complexity="47">
       <classes>
-        <class name="WeatherApp.Bootstrapper" filename="D:\Users\ayu.p\source\repos\Xtramiles - Christian\WeatherApp\Bootstrapper.cs" line-rate="0" branch-rate="1" complexity="2">
+        <class name="WeatherApp.Bootstrapper" filename="D:\Project\Weather\Xtramiles - Christian\WeatherApp\Bootstrapper.cs" line-rate="0" branch-rate="1" complexity="2">
           <methods>
             <method name="Container" signature="()" line-rate="0" branch-rate="1" complexity="NaN">
               <lines>
-                <line number="17" hits="0" branch="false" />
+                <line number="19" hits="0" branch="false" />
               </lines>
             </method>
             <method name="BuildUnityContainer" signature="()" line-rate="0" branch-rate="1" complexity="1">
               <lines>
-                <line number="25" hits="0" branch="false" />
-                <line number="26" hits="0" branch="false" />
+                <line number="27" hits="0" branch="false" />
                 <line number="28" hits="0" branch="false" />
-                <line number="29" hits="0" branch="false" />
+                <line number="30" hits="0" branch="false" />
                 <line number="31" hits="0" branch="false" />
                 <line number="32" hits="0" branch="false" />
+                <line number="33" hits="0" branch="false" />
+                <line number="35" hits="0" branch="false" />
+                <line number="36" hits="0" branch="false" />
               </lines>
             </method>
             <method name="RegisterTypes" signature="(System.Collections.Generic.Dictionary`2&lt;System.Type,System.Type&gt;,Unity.UnityContainer)" line-rate="0" branch-rate="1" complexity="NaN">
               <lines>
-                <line number="35" hits="0" branch="false" />
-                <line number="36" hits="0" branch="false" />
-                <line number="37" hits="0" branch="false" />
-                <line number="38" hits="0" branch="false" />
                 <line number="39" hits="0" branch="false" />
                 <line number="40" hits="0" branch="false" />
+                <line number="41" hits="0" branch="false" />
+                <line number="42" hits="0" branch="false" />
+                <line number="43" hits="0" branch="false" />
+                <line number="44" hits="0" branch="false" />
               </lines>
             </method>
             <method name="Initialise" signature="()" line-rate="0" branch-rate="1" complexity="1">
               <lines>
-                <line number="47" hits="0" branch="false" />
-                <line number="48" hits="0" branch="false" />
-                <line number="50" hits="0" branch="false" />
-                <line number="55" hits="0" branch="false" />
-                <line number="56" hits="0" branch="false" />
+                <line number="51" hits="0" branch="false" />
+                <line number="52" hits="0" branch="false" />
+                <line number="54" hits="0" branch="false" />
+                <line number="59" hits="0" branch="false" />
+                <line number="60" hits="0" branch="false" />
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="17" hits="0" branch="false" />
-            <line number="25" hits="0" branch="false" />
-            <line number="26" hits="0" branch="false" />
+            <line number="19" hits="0" branch="false" />
+            <line number="27" hits="0" branch="false" />
             <line number="28" hits="0" branch="false" />
-            <line number="29" hits="0" branch="false" />
+            <line number="30" hits="0" branch="false" />
             <line number="31" hits="0" branch="false" />
             <line number="32" hits="0" branch="false" />
+            <line number="33" hits="0" branch="false" />
             <line number="35" hits="0" branch="false" />
             <line number="36" hits="0" branch="false" />
-            <line number="37" hits="0" branch="false" />
-            <line number="38" hits="0" branch="false" />
             <line number="39" hits="0" branch="false" />
             <line number="40" hits="0" branch="false" />
-            <line number="47" hits="0" branch="false" />
-            <line number="48" hits="0" branch="false" />
-            <line number="50" hits="0" branch="false" />
-            <line number="55" hits="0" branch="false" />
-            <line number="56" hits="0" branch="false" />
+            <line number="41" hits="0" branch="false" />
+            <line number="42" hits="0" branch="false" />
+            <line number="43" hits="0" branch="false" />
+            <line number="44" hits="0" branch="false" />
+            <line number="51" hits="0" branch="false" />
+            <line number="52" hits="0" branch="false" />
+            <line number="54" hits="0" branch="false" />
+            <line number="59" hits="0" branch="false" />
+            <line number="60" hits="0" branch="false" />
           </lines>
         </class>
-        <class name="WeatherApp.BundleConfig" filename="D:\Users\ayu.p\source\repos\Xtramiles - Christian\WeatherApp\App_Start\BundleConfig.cs" line-rate="0" branch-rate="1" complexity="NaN">
+        <class name="WeatherApp.BundleConfig" filename="D:\Project\Weather\Xtramiles - Christian\WeatherApp\App_Start\BundleConfig.cs" line-rate="0" branch-rate="1" complexity="NaN">
           <methods>
             <method name="RegisterBundles" signature="(System.Web.Optimization.BundleCollection)" line-rate="0" branch-rate="1" complexity="NaN">
               <lines>
@@ -4054,9 +4058,9 @@
             <line number="28" hits="0" branch="false" />
           </lines>
         </class>
-        <class name="WeatherApp.Controllers.HomeController" filename="D:\Users\ayu.p\source\repos\Xtramiles - Christian\WeatherApp\Controllers\HomeController.cs" line-rate="0" branch-rate="0" complexity="7">
+        <class name="WeatherApp.Controllers.HomeController" filename="D:\Project\Weather\Xtramiles - Christian\WeatherApp\Controllers\HomeController.cs" line-rate="0" branch-rate="0" complexity="7">
           <methods>
-            <method name=".ctor" signature="()" line-rate="0" branch-rate="1" complexity="1">
+            <method name=".ctor" signature="(WeatherApp.Service.Country.ICountryService,WeatherApp.Service.Weather.IWeatherService)" line-rate="0" branch-rate="1" complexity="NaN">
               <lines>
                 <line number="15" hits="0" branch="false" />
                 <line number="16" hits="0" branch="false" />
@@ -4075,34 +4079,36 @@
             </method>
             <method name="PopulateCountryList" signature="(System.Collections.Generic.IEnumerable`1&lt;System.String&gt;)" line-rate="0" branch-rate="1" complexity="NaN">
               <lines>
-                <line number="47" hits="0" branch="false" />
-                <line number="48" hits="0" branch="false" />
-                <line number="50" hits="0" branch="false" />
                 <line number="51" hits="0" branch="false" />
                 <line number="52" hits="0" branch="false" />
-                <line number="53" hits="0" branch="false" />
+                <line number="54" hits="0" branch="false" />
                 <line number="55" hits="0" branch="false" />
                 <line number="56" hits="0" branch="false" />
+                <line number="57" hits="0" branch="false" />
+                <line number="59" hits="0" branch="false" />
+                <line number="60" hits="0" branch="false" />
               </lines>
             </method>
             <method name="PopulateCityList" signature="(System.Collections.Generic.IEnumerable`1&lt;System.String&gt;)" line-rate="0" branch-rate="1" complexity="NaN">
               <lines>
-                <line number="59" hits="0" branch="false" />
-                <line number="60" hits="0" branch="false" />
-                <line number="61" hits="0" branch="false" />
                 <line number="63" hits="0" branch="false" />
                 <line number="64" hits="0" branch="false" />
-                <line number="65" hits="0" branch="false" />
                 <line number="66" hits="0" branch="false" />
+                <line number="67" hits="0" branch="false" />
                 <line number="68" hits="0" branch="false" />
                 <line number="69" hits="0" branch="false" />
+                <line number="71" hits="0" branch="false" />
+                <line number="72" hits="0" branch="false" />
               </lines>
             </method>
-            <method name="GetWeather" signature="()" line-rate="0" branch-rate="0" complexity="3">
+            <method name="GetWeather" signature="()" line-rate="0" branch-rate="0" complexity="4">
               <lines>
                 <line number="41" hits="0" branch="false" />
                 <line number="42" hits="0" branch="true" condition-coverage="0% (0/2)" />
                 <line number="43" hits="0" branch="false" />
+                <line number="44" hits="0" branch="false" />
+                <line number="46" hits="0" branch="true" condition-coverage="0% (0/2)" />
+                <line number="47" hits="0" branch="false" />
               </lines>
             </method>
             <method name="Index" signature="()" line-rate="0" branch-rate="0" complexity="3">
@@ -4135,26 +4141,28 @@
             <line number="41" hits="0" branch="false" />
             <line number="42" hits="0" branch="true" condition-coverage="0% (0/2)" />
             <line number="43" hits="0" branch="false" />
+            <line number="44" hits="0" branch="false" />
+            <line number="46" hits="0" branch="true" condition-coverage="0% (0/2)" />
             <line number="47" hits="0" branch="false" />
-            <line number="48" hits="0" branch="false" />
-            <line number="50" hits="0" branch="false" />
             <line number="51" hits="0" branch="false" />
             <line number="52" hits="0" branch="false" />
-            <line number="53" hits="0" branch="false" />
+            <line number="54" hits="0" branch="false" />
             <line number="55" hits="0" branch="false" />
             <line number="56" hits="0" branch="false" />
+            <line number="57" hits="0" branch="false" />
             <line number="59" hits="0" branch="false" />
             <line number="60" hits="0" branch="false" />
-            <line number="61" hits="0" branch="false" />
             <line number="63" hits="0" branch="false" />
             <line number="64" hits="0" branch="false" />
-            <line number="65" hits="0" branch="false" />
             <line number="66" hits="0" branch="false" />
+            <line number="67" hits="0" branch="false" />
             <line number="68" hits="0" branch="false" />
             <line number="69" hits="0" branch="false" />
+            <line number="71" hits="0" branch="false" />
+            <line number="72" hits="0" branch="false" />
           </lines>
         </class>
-        <class name="WeatherApp.FilterConfig" filename="D:\Users\ayu.p\source\repos\Xtramiles - Christian\WeatherApp\App_Start\FilterConfig.cs" line-rate="0" branch-rate="1" complexity="NaN">
+        <class name="WeatherApp.FilterConfig" filename="D:\Project\Weather\Xtramiles - Christian\WeatherApp\App_Start\FilterConfig.cs" line-rate="0" branch-rate="1" complexity="NaN">
           <methods>
             <method name="RegisterGlobalFilters" signature="(System.Web.Mvc.GlobalFilterCollection)" line-rate="0" branch-rate="1" complexity="NaN">
               <lines>
@@ -4170,7 +4178,7 @@
             <line number="11" hits="0" branch="false" />
           </lines>
         </class>
-        <class name="WeatherApp.Models.CountryVm" filename="D:\Users\ayu.p\source\repos\Xtramiles - Christian\WeatherApp\Models\CountryVm.cs" line-rate="0" branch-rate="1" complexity="NaN">
+        <class name="WeatherApp.Models.CountryVm" filename="D:\Project\Weather\Xtramiles - Christian\WeatherApp\Models\CountryVm.cs" line-rate="0" branch-rate="1" complexity="NaN">
           <methods>
             <method name="Name" signature="()" line-rate="0" branch-rate="1" complexity="NaN">
               <lines>
@@ -4187,7 +4195,7 @@
             <line number="5" hits="0" branch="false" />
           </lines>
         </class>
-        <class name="WeatherApp.Models.IndexVm" filename="D:\Users\ayu.p\source\repos\Xtramiles - Christian\WeatherApp\Models\IndexVm.cs" line-rate="0" branch-rate="1" complexity="NaN">
+        <class name="WeatherApp.Models.IndexVm" filename="D:\Project\Weather\Xtramiles - Christian\WeatherApp\Models\IndexVm.cs" line-rate="0" branch-rate="1" complexity="NaN">
           <methods>
             <method name="Country" signature="()" line-rate="0" branch-rate="1" complexity="NaN">
               <lines>
@@ -4237,7 +4245,7 @@
             <line number="10" hits="0" branch="false" />
           </lines>
         </class>
-        <class name="WeatherApp.Models.WeatherVm" filename="D:\Users\ayu.p\source\repos\Xtramiles - Christian\WeatherApp\Models\WeatherVm.cs" line-rate="1" branch-rate="1" complexity="NaN">
+        <class name="WeatherApp.Models.WeatherVm" filename="D:\Project\Weather\Xtramiles - Christian\WeatherApp\Models\WeatherVm.cs" line-rate="1" branch-rate="1" complexity="NaN">
           <methods>
             <method name="Location" signature="()" line-rate="1" branch-rate="1" complexity="NaN">
               <lines>
@@ -4353,7 +4361,7 @@
             <line number="16" hits="1" branch="false" />
           </lines>
         </class>
-        <class name="WeatherApp.MvcApplication" filename="D:\Users\ayu.p\source\repos\Xtramiles - Christian\WeatherApp\Global.asax.cs" line-rate="0" branch-rate="1" complexity="1">
+        <class name="WeatherApp.MvcApplication" filename="D:\Project\Weather\Xtramiles - Christian\WeatherApp\Global.asax.cs" line-rate="0" branch-rate="1" complexity="1">
           <methods>
             <method name="Application_Start" signature="()" line-rate="0" branch-rate="1" complexity="1">
               <lines>
@@ -4377,7 +4385,7 @@
             <line number="20" hits="0" branch="false" />
           </lines>
         </class>
-        <class name="WeatherApp.RouteConfig" filename="D:\Users\ayu.p\source\repos\Xtramiles - Christian\WeatherApp\App_Start\RouteConfig.cs" line-rate="0" branch-rate="1" complexity="NaN">
+        <class name="WeatherApp.RouteConfig" filename="D:\Project\Weather\Xtramiles - Christian\WeatherApp\App_Start\RouteConfig.cs" line-rate="0" branch-rate="1" complexity="NaN">
           <methods>
             <method name="RegisterRoutes" signature="(System.Web.Routing.RouteCollection)" line-rate="0" branch-rate="1" complexity="NaN">
               <lines>
@@ -4403,7 +4411,7 @@
             <line number="21" hits="0" branch="false" />
           </lines>
         </class>
-        <class name="WeatherApp.Service.Country.CountryService" filename="D:\Users\ayu.p\source\repos\Xtramiles - Christian\WeatherApp\Services\Country\CountryService.cs" line-rate="0.7692307692307693" branch-rate="0.75" complexity="4">
+        <class name="WeatherApp.Service.Country.CountryService" filename="D:\Project\Weather\Xtramiles - Christian\WeatherApp\Services\Country\CountryService.cs" line-rate="0.7692307692307693" branch-rate="0.75" complexity="4">
           <methods>
             <method name=".ctor" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
@@ -4473,7 +4481,7 @@
             <line number="53" hits="1" branch="false" />
           </lines>
         </class>
-        <class name="WeatherApp.Service.Weather.WeatherService" filename="D:\Users\ayu.p\source\repos\Xtramiles - Christian\WeatherApp\Services\Weather\WeatherService.cs" line-rate="0.9117647058823529" branch-rate="0.7" complexity="7">
+        <class name="WeatherApp.Service.Weather.WeatherService" filename="D:\Project\Weather\Xtramiles - Christian\WeatherApp\Services\Weather\WeatherService.cs" line-rate="0.9117647058823529" branch-rate="0.7" complexity="7">
           <methods>
             <method name=".ctor" signature="(WeatherApp.Services.IHttpRequestHandler)" line-rate="1" branch-rate="1" complexity="NaN">
               <lines>
@@ -4563,7 +4571,7 @@
             <line number="65" hits="1" branch="false" />
           </lines>
         </class>
-        <class name="WeatherApp.Services.HttpContentWrapper" filename="D:\Users\ayu.p\source\repos\Xtramiles - Christian\WeatherApp\Services\HttpContentWrapper.cs" line-rate="1" branch-rate="1" complexity="1">
+        <class name="WeatherApp.Services.HttpContentWrapper" filename="D:\Project\Weather\Xtramiles - Christian\WeatherApp\Services\HttpContentWrapper.cs" line-rate="1" branch-rate="1" complexity="1">
           <methods>
             <method name=".ctor" signature="(System.Net.Http.HttpContent)" line-rate="1" branch-rate="1" complexity="NaN">
               <lines>
@@ -4591,7 +4599,7 @@
             <line number="18" hits="1" branch="false" />
           </lines>
         </class>
-        <class name="WeatherApp.Services.HttpRequestHandler" filename="D:\Users\ayu.p\source\repos\Xtramiles - Christian\WeatherApp\Services\HttpRequestHandler.cs" line-rate="0" branch-rate="1" complexity="NaN">
+        <class name="WeatherApp.Services.HttpRequestHandler" filename="D:\Project\Weather\Xtramiles - Christian\WeatherApp\Services\HttpRequestHandler.cs" line-rate="0" branch-rate="1" complexity="NaN">
           <methods>
             <method name=".ctor" signature="(System.Net.Http.HttpClient)" line-rate="0" branch-rate="1" complexity="NaN">
               <lines>
@@ -4619,7 +4627,7 @@
             <line number="18" hits="0" branch="false" />
           </lines>
         </class>
-        <class name="WeatherApp.Services.Weather.Response.CountryResponse" filename="D:\Users\ayu.p\source\repos\Xtramiles - Christian\WeatherApp\Services\Country\Response\CountryResponse.cs" line-rate="1" branch-rate="1" complexity="NaN">
+        <class name="WeatherApp.Services.Weather.Response.CountryResponse" filename="D:\Project\Weather\Xtramiles - Christian\WeatherApp\Services\Country\Response\CountryResponse.cs" line-rate="1" branch-rate="1" complexity="NaN">
           <methods>
             <method name="CountryCode" signature="()" line-rate="1" branch-rate="1" complexity="NaN">
               <lines>
@@ -4647,7 +4655,7 @@
             <line number="13" hits="61" branch="false" />
           </lines>
         </class>
-        <class name="WeatherApp.Services.Weather.Response.MainInfo" filename="D:\Users\ayu.p\source\repos\Xtramiles - Christian\WeatherApp\Services\Weather\Response\WeatherResponse.cs" line-rate="1" branch-rate="1" complexity="NaN">
+        <class name="WeatherApp.Services.Weather.Response.MainInfo" filename="D:\Project\Weather\Xtramiles - Christian\WeatherApp\Services\Weather\Response\WeatherResponse.cs" line-rate="1" branch-rate="1" complexity="NaN">
           <methods>
             <method name="Temp" signature="()" line-rate="1" branch-rate="1" complexity="NaN">
               <lines>
@@ -4686,7 +4694,7 @@
             <line number="27" hits="4" branch="false" />
           </lines>
         </class>
-        <class name="WeatherApp.Services.Weather.Response.WeatherDescription" filename="D:\Users\ayu.p\source\repos\Xtramiles - Christian\WeatherApp\Services\Weather\Response\WeatherResponse.cs" line-rate="1" branch-rate="1" complexity="NaN">
+        <class name="WeatherApp.Services.Weather.Response.WeatherDescription" filename="D:\Project\Weather\Xtramiles - Christian\WeatherApp\Services\Weather\Response\WeatherResponse.cs" line-rate="1" branch-rate="1" complexity="NaN">
           <methods>
             <method name="Description" signature="()" line-rate="1" branch-rate="1" complexity="NaN">
               <lines>
@@ -4703,7 +4711,7 @@
             <line number="37" hits="4" branch="false" />
           </lines>
         </class>
-        <class name="WeatherApp.Services.Weather.Response.WeatherResponse" filename="D:\Users\ayu.p\source\repos\Xtramiles - Christian\WeatherApp\Services\Weather\Response\WeatherResponse.cs" line-rate="1" branch-rate="1" complexity="NaN">
+        <class name="WeatherApp.Services.Weather.Response.WeatherResponse" filename="D:\Project\Weather\Xtramiles - Christian\WeatherApp\Services\Weather\Response\WeatherResponse.cs" line-rate="1" branch-rate="1" complexity="NaN">
           <methods>
             <method name="Name" signature="()" line-rate="1" branch-rate="1" complexity="NaN">
               <lines>
@@ -4775,7 +4783,7 @@
             <line number="18" hits="6" branch="false" />
           </lines>
         </class>
-        <class name="WeatherApp.Services.Weather.Response.WindInfo" filename="D:\Users\ayu.p\source\repos\Xtramiles - Christian\WeatherApp\Services\Weather\Response\WeatherResponse.cs" line-rate="1" branch-rate="1" complexity="NaN">
+        <class name="WeatherApp.Services.Weather.Response.WindInfo" filename="D:\Project\Weather\Xtramiles - Christian\WeatherApp\Services\Weather\Response\WeatherResponse.cs" line-rate="1" branch-rate="1" complexity="NaN">
           <methods>
             <method name="Speed" signature="()" line-rate="1" branch-rate="1" complexity="NaN">
               <lines>
@@ -4792,7 +4800,7 @@
             <line number="32" hits="4" branch="false" />
           </lines>
         </class>
-        <class name="WeatherApp.UnityConfig" filename="D:\Users\ayu.p\source\repos\Xtramiles - Christian\WeatherApp\App_Start\UnityConfig.cs" line-rate="0" branch-rate="1" complexity="1">
+        <class name="WeatherApp.UnityConfig" filename="D:\Project\Weather\Xtramiles - Christian\WeatherApp\App_Start\UnityConfig.cs" line-rate="0" branch-rate="1" complexity="1">
           <methods>
             <method name="Container" signature="()" line-rate="0" branch-rate="1" complexity="NaN">
               <lines>
@@ -4830,7 +4838,7 @@
             <line number="45" hits="0" branch="false" />
           </lines>
         </class>
-        <class name="WeatherApp.UnityMvcActivator" filename="D:\Users\ayu.p\source\repos\Xtramiles - Christian\WeatherApp\App_Start\UnityMvcActivator.cs" line-rate="0" branch-rate="1" complexity="2">
+        <class name="WeatherApp.UnityMvcActivator" filename="D:\Project\Weather\Xtramiles - Christian\WeatherApp\App_Start\UnityMvcActivator.cs" line-rate="0" branch-rate="1" complexity="2">
           <methods>
             <method name="Start" signature="()" line-rate="0" branch-rate="1" complexity="1">
               <lines>
@@ -4864,7 +4872,7 @@
     </package>
     <package name="WeatherApp.UnitTest" line-rate="1" branch-rate="0.5" complexity="17">
       <classes>
-        <class name="WeatherApp.UnitTest.CountryServiceTests" filename="D:\Users\ayu.p\source\repos\Xtramiles - Christian\WeatherApp.UnitTest\CountryServiceTests.cs" line-rate="1" branch-rate="0.5" complexity="6">
+        <class name="WeatherApp.UnitTest.CountryServiceTests" filename="D:\Project\Weather\Xtramiles - Christian\WeatherApp.UnitTest\CountryServiceTests.cs" line-rate="1" branch-rate="0.5" complexity="6">
           <methods>
             <method name="Initialize" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
@@ -4920,7 +4928,7 @@
             <line number="51" hits="1" branch="false" />
           </lines>
         </class>
-        <class name="WeatherApp.UnitTest.WeatherServiceTests" filename="D:\Users\ayu.p\source\repos\Xtramiles - Christian\WeatherApp.UnitTest\WeatherServiceTests.cs" line-rate="1" branch-rate="0.5" complexity="11">
+        <class name="WeatherApp.UnitTest.WeatherServiceTests" filename="D:\Project\Weather\Xtramiles - Christian\WeatherApp.UnitTest\WeatherServiceTests.cs" line-rate="1" branch-rate="0.5" complexity="11">
           <methods>
             <method name="Initialize" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>

@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
+using System.Web;
 using Newtonsoft.Json;
 using WeatherApp.Services.Weather.Response;
 
@@ -9,15 +11,13 @@ namespace WeatherApp.Service.Country
 {
 	public class CountryService : ICountryService
 	{
-		//need to update this file later after found api that contain country and city
-		private const string jsonFilePath = "D:\\Users\\ayu.p\\source\\repos\\Xtramiles - Christian\\WeatherApp\\Data\\CountryData.txt";
-
 		public CountryService()
 		{
 		}
 
 		public IEnumerable<string> GetCities(string country)
 		{
+			var jsonFilePath = HttpContext.Current.Server.MapPath("~\\Data\\CountryData.txt");
 			try
 			{
 				var jsonContent = System.IO.File.ReadAllText(jsonFilePath);
@@ -39,6 +39,7 @@ namespace WeatherApp.Service.Country
 
 		public async Task<IEnumerable<string>> GetCountries()
 		{
+			var jsonFilePath = HttpContext.Current.Server.MapPath("~\\Data\\CountryData.txt");
 			try
 			{
 				var jsonContent = System.IO.File.ReadAllText(jsonFilePath);
