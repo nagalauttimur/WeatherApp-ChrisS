@@ -274,8 +274,10 @@
     <Compile Include="Services\Country\CountryService.cs" />
     <Compile Include="Services\Country\ICountryService.cs" />
     <Compile Include="Services\Country\Response\CountryResponse.cs" />
+    <Compile Include="Services\FileOperations.cs" />
     <Compile Include="Services\HttpRequestHandler.cs" />
     <Compile Include="Services\HttpContentWrapper.cs" />
+    <Compile Include="Services\IFileOperations.cs" />
     <Compile Include="Services\IHttpRequestHandler.cs" />
     <Compile Include="Services\IHttpContentWrapper.cs" />
     <Compile Include="Services\Weather\IWeatherService.cs" />

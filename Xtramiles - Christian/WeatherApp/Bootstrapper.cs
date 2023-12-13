@@ -31,7 +31,8 @@ namespace WeatherApp
             container.RegisterType<IWeatherService, WeatherService>(); 
             container.RegisterType<IHttpRequestHandler, HttpRequestHandler>();
 			container.RegisterType<IHttpContentWrapper, HttpContentWrapper>();
-
+			container.RegisterType<IFileOperations, FileOperations>();
+			
 			return container;
         }
 
