@@ -1,0 +1,103 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+@model WeatherApp.Models.IndexVm
+
+<div class="jumbotron">
+    <h1>Weather App</h1>
+</div>
+
+<div class="row">
+    <div class="form-group" id="timeZonePanel">
+        <label class="control-label" for="SelectedTimeZone">Country :</label>
+        @Html.DropDownListFor(m => m.Country, this.Model.Countries, "Please select country", new { @class = "form-control form-control-custom" })
+        @Html.DropDownListFor(m => m.City, this.Model.Cities, "Please select city", new { @class = "form-control form-control-custom" })
+        <button type="submit" id="submitBtn">Submit</button>
+
+        <div id="weatherPanel" style="display:none">
+
+        </div>
+    </div>
+</div>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>
+
+    $(document).ready(function () {
+        $('#Country').change(function () {
+
+            var url = '@Url.Action("GetCities", "Home")'+'?country=' + $("#Country").val();
+            $.ajax({
+                cache: false,
+                async: false,
+                type: "POST",
+                url: url,
+                success: function (data) {
+                    if (data.IsSuccess) {
+                        $('#City', self.Element).empty();
+
+                        $('#City', self.Element).append("<option value=''>Please select city</option>");
+
+                        $.each(data.Cities,
+                            function (index, row) {
+                                $('#City', self.Element).append("<option value='" + row + "'>" + row + "</option>");
+                            });
+                    }
+                },
+                error: function (data) {
+                    if (data.status === 401) {
+                        location.reload();
+                        return false;
+                    }
+                    alert("Error when sending request...");
+                    return false;
+                }
+            });
+        });
+
+        $('#submitBtn').click(function () {
+            var city = $("#City").val();
+            if (city === '') {
+                $('#weatherPanel', self.Element).empty();
+                $('#weatherPanel', self.Element).append("<label>Please Select a valid city</label><br/>");
+                $('#weatherPanel', self.Element).show();
+            }
+            else {
+                var url = '@Url.Action("GetWeather", "Home")' + '?city=' + city;
+                $.ajax({
+                    cache: false,
+                    async: false,
+                    type: "POST",
+                    url: url,
+                    success: function (data) {
+                        if (data.IsSuccess) {
+                            $('#weatherPanel', self.Element).empty();
+                            $('#weatherPanel', self.Element).show();
+
+                            $('#weatherPanel', self.Element).append("<label> Location : " + data.Weather.Location + "</label><br/>");
+                            $('#weatherPanel', self.Element).append("<label> Time : " + data.Weather.Time + "</label><br/>");
+                            $('#weatherPanel', self.Element).append("<label> Wind : " + data.Weather.Wind + "</label><br/>");
+                            $('#weatherPanel', self.Element).append("<label> Visibility : " + data.Weather.Visibility + "</label><br/>");
+                            $('#weatherPanel', self.Element).append("<label> SkyConditions : " + data.Weather.SkyConditions + "</label><br/>");
+                            $('#weatherPanel', self.Element).append("<label> TemperatureCelsius : " + data.Weather.TemperatureCelsius + "</label><br/>");
+                            $('#weatherPanel', self.Element).append("<label> TemperatureFahrenheit : " + data.Weather.TemperatureFahrenheit + "</label><br/>");
+                            $('#weatherPanel', self.Element).append("<label> DewPoint : " + data.Weather.DewPoint + "</label><br/>");
+                            $('#weatherPanel', self.Element).append("<label> RelativeHumidity : " + data.Weather.RelativeHumidity + "</label><br/>");
+                            $('#weatherPanel', self.Element).append("<label> Pressure : " + data.Weather.Pressure + "</label><br/>");
+                            $('#weatherPanel', self.Element).show();
+                        }
+                    },
+                    error: function (data) {
+                        if (data.status === 401) {
+                            location.reload();
+                            return false;
+                        }
+                        alert("Error when sending request...");
+                        return false;
+                    }
+                });
+
+            }
+        });
+    });
+
+</script>
